@@ -10,17 +10,17 @@
     <header>
         <h1>FORMULÁRIO DE CADASTRO</h1>
         <ul>
-            <li><a href="">Cadastro</a></li>
-            <li><a href="">Endereço</a></li>
-            <li><a href="">Profissional</a></li>
-            <li><a href="">Outros</a></li>
+            <li><a href="#nome">Cadastro</a></li>
+            <li><a href="#cep">Endereço</a></li>
+            <li><a href="#antepenultima">Profissional</a></li>
+            <li><a href="#cursos">Outros</a></li>
         </ul>
     </header>
     <main>
         <section id="cadastro">
             <h2>Cadastro:</h2>
             <h3>Insira abaixo seus dados cadastrais.</h3>
-            <form>
+            <form id="dadosPessoais">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" required>
 
@@ -29,13 +29,11 @@
 
                 <label for="dataNascimento">Data de Nascimento:</label>
                 <input type="text" id="dataNascimento" required>
-            </form>
-        </section>
-        <section id="endereco">
-            <h2>Endereço:</h2>
-            <h3>Insira seus dados de endereço.</h3>
-            <form>
-                <label for="cep">CEP:</label>
+
+                <h2>Endereço:</h2>
+                <h3>Insira abaixo seus endereço.</h3>
+
+                 <label for="cep">CEP:</label>
                 <input type="number" id="cep" name="cep" required>
 
                 <label for="logradouro">Logradouro:</label>
@@ -52,12 +50,10 @@
                 
                 <label for="numero">Número:</label>
                 <input type="number" id="numero" name="numero" required>
-            </form>
-        </section>
-        <section id="profissional">
-            <h2>Profissional:</h2>
-            <h3>Insira suas três ultimas experiências.</h3>
-            <form>
+
+                <h2>Profissional:</h2>
+                <h3>Insira abaixo suas experiências anteriores.</h3>
+
                 <label for="antepenultima">Antepenultima:</label>
                 <textarea name="antepenultima" id="antepenultima"></textarea>
 
@@ -67,12 +63,9 @@
                 <label for="ultima">Ultima:</label>
                 <textarea name="ultima" id="ultima"></textarea>
 
-            </form>
-        </section>
-        <section id="outros">
-            <h2>Outros:</h2>
-            <h3>Insira nos campos abaixo cursos e habilidades</h3>
-            <form>
+                <h2>Outros:</h2>
+                <h3>Insira abaixo seus cursos e competências relacionadas.</h3>
+
                 <label for="cursos">Cursos:</label>
                 <textarea name="cursos" id="cursos"></textarea>
 
@@ -82,7 +75,7 @@
                 <label for="outros">Outros:</label>
                 <textarea name="outros" id="outros"></textarea>
 
-                <button type="submit">Cadastrar</button>
+                <button type="submit" id="cadastrar">Cadastrar</button>
             </form>
         </section>
         <script src="script.js"></script>
